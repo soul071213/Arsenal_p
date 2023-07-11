@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsenal</title>
+    <style>
+        *{
+
+            margin: 0;
+            padding: 0;
+        }
+        *::-webkit-scrollbar {  
+            /* 스크롤바 가로는 지우고 세로는 안보이는데 기능은 있게 */
+            display: none; 
+            overflow-x: hidden;
+            overflow-y :scroll; 
+            -ms-overflow-style: none;
+            scrollbar-width: none;  
+        }
+        header{
+            
+            width: 100vw;
+            height: 7vh;
+            background-color: rgb(240, 0, 0);
+            display: flex;  
+            position: fixed;
+            align-items: center;
+        }
+        .label_h{
+            display: flex;
+            align-items: center;
+            margin-left: 3%;
+            text-align: center;
+            float: left;
+            width: 7%;
+            height: 90%;
+        }
+        .label_a{
+            padding: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .label_a:link{
+            color: white;
+        }
+        .label_a:visited { color:white; }
+        .label_a:hover {
+            border-radius: 3px;
+            background-color: white;
+            box-shadow: 5px 5px 7px black ;
+            color:black ;
+         }
+        .logo{
+            margin-top: auto;
+            padding-top:8px;
+            float: left;
+            margin-left: 1%;
+        }
+        .logo2{
+            width: 130px;
+            height: 140px;
+        }
+        .content{
+            height: 40vw;  
+            display: block;
+        }
+        
+        .red{
+            float: left;
+            width: 10.5%;
+            height: 100%;
+            background-color:  rgb(240, 0, 0);
+        }
+        .imgs{
+            float: left;
+            width: 70vw;
+            height: 100%;   
+        }
+        h3{
+            text-align: center;
+            font-size: 20px;
+        }
+        .h3_1{
+            text-align: center;
+            font-size: 17px;
+        }
+        .shirt{
+            margin-right: 2%;
+            margin-top: 5%;
+            float: right;
+            width: 15%;
+            height:30vh;
+        }
+        .shirt2{
+            margin-right: 2%;
+            margin-top: 2%;
+            float: right;
+            width: 15%;
+            height:30vh;
+        }
+        .but{
+            margin-top: 10%;
+            margin-left: 2%;
+            width: 100%;
+            height: 70%;
+        }
+        .butt{
+            margin-bottom: 3%;
+            /* background-image: url("C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_s.jpg"); */
+            width: 30%;
+            height: 60px;
+            background-color: white;
+            border: 1;
+            border-color: white;
+            color: black;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        .butt:hover{
+            background-color: rgb(240, 0, 0);
+            color: white;
+        }
+        .butt1{
+            margin-bottom: 3%;
+            /* background-image: url("C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_s.jpg"); */
+            width: 30%;
+            height: 60px;
+            background-color: white;
+            border: 1;
+            border-color: white;
+            color: black;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        .butt1:hover{
+            background-color: black;
+            color: rgb(240, 0, 0);
+        }
+        #photo{
+            
+            margin-top: 30%;
+            width: 100%;
+            height:100%;
+        }
+        #photo1{
+            
+            margin-top: 30%;
+            width: 100%;
+            height:100%;
+        }
+        .biggoss{
+            width: 100%;
+            height: 100%;
+        }
+        .content_t{
+            width: 100vw;
+            height: 10vh;
+        }
+
+        .content_v{
+            float: left;
+            width :100vw;
+            height: 75vh;
+        }
+        .video_2{
+            float: left;
+            width: 70%;
+            height: 100%;
+        }
+        .text{
+            width: 100%;
+            float: left;
+            height: 100%;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            background-color:  rgb(240, 0, 0);
+        }
+        table{
+            float: right;
+            margin-right: 100px;
+            width: 10%;
+            height: 70%;
+            margin-top: 0%;
+        }
+
+
+
+        /* .font_p{
+            padding-bottom: auto;
+            padding-top: auto;
+            padding-left: 1%;
+            padding-right: 1%;
+            border: 3.1px;
+            border-color:  rgb(240, 0, 0);
+            border-radius: 20px;
+            border-style: dashed;
+        } */
+        /* .sidebar{
+            padding-bottom: auto;
+            padding-top: auto;
+            padding-left: 1%;
+            padding-right: 1%;
+            border: 3.1px;
+            border-color:  rgb(240, 0, 0);
+            border-radius: 20px;
+            border-style: dashed;
+            margin-right: 1%;
+            float: right;
+            text-align: center;
+        } */
+        /* .arteda{  
+            width: 30vw;
+            height: 29vw;
+        } */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a  href="file:///C:/Users/soulj/Desktop/HTML/index.html">
+                <img class="logo2" src="C:/Users/soulj/Desktop/HTML/arsnal.png">
+            </a>
+        </div>
+        <div class="label_h">
+            <a class="label_a" href="https://search.naver.com/search.naver?where=news&sm=tab_jum&query=%EC%95%84%EC%8A%A4%EB%82%A0">NEWS</a>
+        </div>
+        <div class="label_h">
+            <a class="label_a" href="https://www.youtube.com/watch?v=Z1Zih6XobW4">VIDEO</a>
+        </div>
+        <div class="label_h">
+            <a class="label_a" href="C:\Users\soulj\Desktop\HTML\a_teams.html">TEAMS</a>
+        </div>
+        <div class="label_h">
+            <a class="label_a" href="C:\Users\soulj\Desktop\HTML\a_hisotory.html">HISTORY</a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="red"></div>
+        <img class="imgs" src="C:/Users/soulj/Desktop/HTML/2f71b55ee938c8d1aa6233376f7aa480.jpg">
+        <div class="shirt">
+            <h3>ARSENAL 23/24 HOME SHIRT</h3>
+            <img id="photo" src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_f.jpg">
+            <div class="but">
+                <button onclick="shirt_f()" class="butt">FRoNT</button>
+                <button onclick="shirt_s()" class="butt">oBLiQue</button>
+                <button onclick="shirt_s2()" class="butt">SiDe</button>
+                <button onclick="shirt_b()" class="butt">BaCK</button>
+                <button onclick="shirt_d()" class="butt">LoGo</button>
+                <button onclick="shirt_d2()" class="butt">NeCK</button>
+            </div>
+        </div>
+
+    <div class=" content_t">
+        <h2 class="text">WELCOME to Arsenal in korea</h2>
+    </div>
+    <div class="content_v">
+        <div class="red"></div>
+        <iframe class="video_2" src="https://www.youtube.com/embed/-fIXp5EpG8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="shirt2">
+            <h3 class="h3_1">ARSENAL 23/24 SLEEVELESS TRAINING SHIRT</h3>
+            <img id="photo1" src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhz2174_f.jpg">
+            <div class="but">
+                <button onclick="shirt_f1()" class="butt1">FRoNT</button>
+                <button onclick="shirt_s1()" class="butt1">oBLiQue</button>
+                <button onclick="shirt_1s2()" class="butt1">SiDe</button>
+                <button onclick="shirt_b1()" class="butt1">BaCK</button>
+                <button onclick="shirt_d1()" class="butt1">LoGo</button>
+                <button onclick="shirt_1d2()" class="butt1">aDiDaS</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function shirt_s(){
+            document.getElementById("photo").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_s.jpg";
+        }
+        function shirt_s2(){
+            document.getElementById("photo").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_s2.jpg";
+        }
+        function shirt_f(){
+            document.getElementById("photo").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_f.jpg";
+        }
+        function shirt_d2(){
+            document.getElementById("photo").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_d2.jpg";
+        }
+        function shirt_d(){
+            document.getElementById("photo").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_d.jpg";
+        }
+        function shirt_b(){
+            document.getElementById("photo").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_b.jpg";
+        }
+        function shirt_s1(){
+            document.getElementById("photo1").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhz2174_s2.jpg";
+        }
+        function shirt_1s2(){
+            document.getElementById("photo1").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhz2174_s.jpg";
+        }
+        function shirt_f1(){
+            document.getElementById("photo1").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhz2174_f.jpg";
+        }
+        function shirt_1d2(){
+            document.getElementById("photo1").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhz2174_d2.jpg";
+        }
+        function shirt_d1(){
+            document.getElementById("photo1").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhz2174_d1.jpg";
+        }
+        function shirt_b1(){
+            document.getElementById("photo1").src="C:/Users/soulj/Desktop/HTML/photo_shirt/mhz2174_b.jpg";
+        }
+    </script>
+</body>
+</html>
