@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HISTORY</title>
+    <title>Arsenal</title>
     <style>
         *{
+
             margin: 0;
             padding: 0;
         }
+        *::-webkit-scrollbar {  
+            /* 스크롤바 가로는 지우고 세로는 안보이는데 기능은 있게 */
+            display: none; 
+            overflow-x: hidden;
+            overflow-y :scroll; 
+            -ms-overflow-style: none;
+            scrollbar-width: none;  
+        }
         header{
+            
             width: 100vw;
             height: 7vh;
             background-color: rgb(240, 0, 0);
-            display: flex;
+            display: flex;  
             position: fixed;
             align-items: center;
         }
@@ -28,7 +38,7 @@
             height: 90%;
         }
         .label_a{
-            
+            padding: 5px;
             font-weight: bold;
             text-decoration: none;
             font-size: 20px;
@@ -38,6 +48,7 @@
         }
         .label_a:visited { color:white; }
         .label_a:hover {
+            border-radius: 3px;
             background-color: white;
             box-shadow: 5px 5px 7px black ;
             color:black ;
@@ -46,11 +57,147 @@
             margin-top: auto;
             padding-top:8px;
             float: left;
-            margin-left: 2%;
+            margin-left: 1%;
         }
         .logo2{
             width: 130px;
             height: 140px;
+        }
+        .content{
+            height: 50vw;  
+            display: block;
+        }
+        
+        .red{
+            float: left;
+            width: 10.5%;
+            height: 100%;
+            background-color:  rgb(240, 0, 0);
+        }
+        .imgs{
+            float: left;
+            width: 70vw;
+            height: 100%;   
+        }
+        h3{
+            text-align: center;
+            font-size: 20px;
+        }
+        .h3_1{
+            text-align: center;
+            font-size: 17px;
+        }
+        .shirt{
+            margin-right: 2%;
+            margin-top: 5%;
+            float: right;
+            width: 15%;
+            height:30vh;
+        }
+        .shirt2{
+            margin-right: 2%;
+            margin-top: 2%;
+            float: right;
+            width: 15%;
+            height:30vh;
+        }
+        .but{
+            margin-top: 10%;
+            margin-left: 2%;
+            width: 100%;
+            height: 70%;
+        }
+        .butt{
+            margin-bottom: 3%;
+            /* background-image: url("C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_s.jpg"); */
+            width: 30%;
+            height: 60px;
+            background-color: white;
+            border: 1;
+            border-color: white;
+            color: black;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        .butt:hover{
+            background-color: rgb(240, 0, 0);
+            color: white;
+        }
+        .butt1{
+            margin-bottom: 3%;
+            /* background-image: url("C:/Users/soulj/Desktop/HTML/photo_shirt/mhr6929_s.jpg"); */
+            width: 30%;
+            height: 60px;
+            background-color: white;
+            border: 1;
+            border-color: white;
+            color: black;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        .butt1:hover{
+            background-color: black;
+            color: rgb(240, 0, 0);
+        }
+        #photo{
+            
+            margin-top: 30%;
+            width: 100%;
+            height:100%;
+        }
+        #photo1{
+            
+            margin-top: 30%;
+            width: 100%;
+            height:100%;
+        }
+        .biggoss{
+            width: 100%;
+            height: 100%;
+        }
+        .content_t{
+            width: 100vw;
+            height: 10vh;
+        }
+
+        .content_v{
+            float: left;
+            width :100vw;
+            height: 75vh;
+        }
+        .video_2{
+            float: left;
+            width: 70%;
+            height: 100%;
+        }
+        .text{
+            width: 100%;
+            float: left;
+            height: 100%;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            background-color:  rgb(240, 0, 0);
+        }
+        table{
+            float: right;
+            margin-right: 100px;
+            width: 10%;
+            height: 70%;
+            margin-top: 0%;
+        }
+        .words{
+            margin-top: 4%;
+            background-color: rgb(235, 230, 231);
+            float: left;
+            margin-left: 10%;
+        }
+        p{
+            
+            font-weight: bold;
+            font-size: 19px;
         }
     </style>
 </head>
@@ -58,8 +205,8 @@
 
     <header>
         <div class="logo">
-            <a  href="file:///C:/Users/soulj/Desktop/HTML/index.html">
-                <img class="logo2" src="C:/Users/soulj/Desktop/HTML/arsnal.png">
+            <a  href="index.html">
+                <img class="logo2" src="photo_shirt/arsnal.png">
             </a>
         </div>
         <div class="label_h">
@@ -69,13 +216,28 @@
             <a class="label_a" href="https://www.youtube.com/watch?v=Z1Zih6XobW4">VIDEO</a>
         </div>
         <div class="label_h">
-            <a class="label_a" href="C:\Users\soulj\Desktop\HTML\a_teams.html">TEAMS</a>
+            <a class="label_a" href="a_teams.html">TEAMS</a>
         </div>
         <div class="label_h">
-            <a class="label_a" href="C:\Users\soulj\Desktop\HTML\a_hisotory.html">HISTORY</a>
+            <a class="label_a" href="a_hisotory.html">HISTORY</a>
         </div>
     </header>
-    
+    <div class="content">
+        <div class="words">
+            <p>아스날은 1886년에 다이얼 스퀘어(Dial Square)라는 이름으로 창단된 게 그 시초이다. <br>이 축구 클럽은 런던 남동부에 있는 울위치의 왕립 무기고(Royal Arsenal, 로열 아스날)<br>에서 일하던 노동자들이 모여 만든 것으로, 1891년에 프로 구단으로 독립하였다. 1893년에는 울위치 아스날(Woolwich Arsenal)<br>로 이름을 바꾸고 풋볼 리그(Football League)에 가입하였다. 하지만 연고지인 울위치가 지리적으로 고립되어 있어 다른 구단들보다 관중이 비교적 적었고, <br>이는 결국 구단을 재정적 문제에 빠뜨렸다. 1910년에 구단을 인수한 헨리 노리스는 구단의 파산이 유력해 보이자 연고지를 옮기기로 결정하였다. <br>이후 1913년에 2부 리그로 강등된 뒤 연고지를 북런던에 있는 아스날 스타디움, 통칭 하이버리로 옮겼다. <br>이듬해 구단 이름에서 울위치를 빼버리고 현재의 아스날 FC로 바꾸었다.</p>
+            <br>    
+            <p>브루스 리오치가 물러난 1996년, 훗날 아스날의 황금기를 이끌 구세주가 나타나게 되는데 그는 바로 프랑스의 아르센 벵거였다.<br> 그는 아스날의 첫 번째 비영어권 감독이었다. 벵거 감독은 팀에 새로운 훈련 통치 및 몇몇 외국 용병 선수들과 잉글랜드의 재능있는 선수들을 잘 조합시킨 새로운 전술을 가져다 주었다. <br>아스날은 1997-98 시즌, 리그 우승과 FA컵 우승으로 더블을 차지하였고, <br>그와 더불어 1999-2000시즌에는 팀 창단 후 처음으로 UEFA컵 결승에 진출하였지만 아쉽게도 승부차기 끝에 갈라타사라이 SK에게 패해 우승이 좌절되었다.<br>
 
+                하지만 2001-02 시즌, 또다시 리그와 FA컵 더블을 차지하였다. 2002-03 시즌에는 9번째 FA컵 우승을 차지하였고 이듬해인 2003-04 시즌에는 프리미어 리그 사상 첫 무패 우승을 기록하였는데 <br>이는 그동안 잉글랜드 1부리그 역사상 딱 한 번밖에 없었고 1889년 프레스턴 노스 엔드 FC이후 115년 만에 1부 리그에서 나온 역대급 기록이었다.<br> 이때의 무패 우승을 가리켜 "더 인빈서블"(The Invincible)이라 부르기도 한다. 이때 49경기 리그 연속 무패 행진도 기록하였는데 이는 영국 축구에서 기록으로 남아 있다.
+                
+                2004-05 시즌에는 다시 FA컵 우승을 차지해 통산 10번째 FA컵 우승이 되었다. 아스날은 그동안 유럽 대회 우승과는 인연이 별로 없는 팀이었는데, 마침내 2005-06 시즌에 구단 창단 후 첫 UEFA 챔피언스리그 결승에 진출하여 우승을 노리게 된다. 당시 아스날의 챔피언스리그 결승 첫 진출은 런던을 연고지로 하고 있는 축구 팀 역사상 처음 있는 일이었다. 그 만큼 런던의 명문 클럽 중 하나인 아스날이 자국에서는 우승을 많이 차지했었지만 그에 비해 유럽 대회와는 거리가 멀었던 셈이었다. 그러나 그 결승전에서 바르셀로나에게 패해 첫 챔피언스리그 우승도 좌절되고 만다. 벵거가 맡은 11시즌 중에서 무려 8시즌 가량은 1,2위를 벗어난 성적은 거두지 않았다. 아스날은 프리미어 리그 출범 이후 리그 우승을 했었던 7팀 중 한 팀이며,[2] 아스날은 리그 우승을 차지할 때마다 다음 시즌 연속 우승에는 실패하고 있다.
+                
+                2006년 아스날은 93년간 홈 경기장으로 썼던 하이버리의 아스날 스타디움에서 바로 근처 애시버턴 그로브에 신축한 에미레이트 스타디움으로 홈 경기장을 옮기게 된다. 2004-05 시즌 FA컵을 마지막으로 2013-14시즌 우승컵을 들어 올릴때 까지 무관이었다.2012-13 시즌에는 4위로 리그를 마감했다.4스날 안드레이 아르샤빈을 2009년에 1500만 파운드로 영입하면서 클럽 레코드를 기록했지만, 2013-14 시즌을 시작하고 2013년 8월 31일에 메수트 외질을 4000만 파운드로 영입하면서 클럽 레코드를 달성하였다. [3] 아스날은 2013년 12월 말까지는 1위였으나 2014년에 들어서면서 다시 4위로 떨어져 4위로 마감하였다. 하지만 FA컵에서는 2014년 5월 18일 헐 시티와의 결승전에서 접전 끝에 이겨 9년 만에 우승하였다.
+                
+                그리고 맨시티와의 FA 커뮤니티 실드 경기에서 3-0 승리를 거두고 10년 만에 우승을 차지하였다.2016-17 시즌 챔피언스리그 16강에서 바이에른 뮌헨에 1차전에서 5:1 2차전에서도 5:1 로 총 합산 10:2 로 16강에서 떨어지면서 아쉬운 시즌을 보냈다.
+                
+                2017-18 시즌 종료를 끝으로 22년 간 팀을 이끌어 온 아르센 벵거 감독이 이번 시즌을 끝으로 사임하며 감독직에서 물러났다.</p>
+        </div>
+    </div>
 </body>
 </html>
